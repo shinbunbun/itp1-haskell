@@ -1,5 +1,4 @@
 import Control.Applicative
-import Control.Monad (when)
 
 main = do
   exec 1
