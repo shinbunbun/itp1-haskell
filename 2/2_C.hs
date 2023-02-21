@@ -4,4 +4,4 @@ import Data.Ord
 
 main = do
   s <- map (read :: String -> Int) . words <$> getLine
-  putStrLn $ unwords $ sort $ map show s
+  putStrLn $ unwords $ map show $ sort s
