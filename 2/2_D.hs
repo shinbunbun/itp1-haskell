@@ -6,8 +6,5 @@ main = do
 
 calc :: Int -> Int -> Int -> Int -> Int -> String
 calc w h x y r
-  | x < r = "No"
-  | y + r > h = "No"
-  | x + r > w = "No"
-  | y < r = "No"
+  | x < r || y + r > h || x + r > w || y < r = "No"
   | otherwise = "Yes"
